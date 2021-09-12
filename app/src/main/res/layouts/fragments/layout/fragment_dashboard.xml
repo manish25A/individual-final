@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+   >
+
+    <LinearLayout
+        android:id="@+id/FragmentLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            app:srcCompat="@drawable/ic_arrow"
+            tools:ignore="VectorDrawableCompat" />
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="-39dp"
+            android:text="Profile Info"
+            android:textAlignment="center"
+            android:textColor="#363636"
+            android:textSize="35dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="234dp"
+                android:includeFontPadding="false"
+                android:text="name"
+                android:textSize="20sp"
+                tools:ignore="UnknownId" />
+
+            <TextView
+                android:id="@+id/EditPassword"
+                android:layout_width="162dp"
+                android:layout_height="22dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="229dp"
+                android:layout_marginTop="95dp"
+                android:layout_marginEnd="0dp"
+                android:hint="Edit Password?"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="#ff5349"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="207dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/userName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="Email"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/customerNumber"
+                android:layout_width="207dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/userName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="37dp"
+                android:includeFontPadding="false"
+                android:text="Number"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/totalitemcrdview"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/azure"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tvuseritems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:includeFontPadding="false"
+                        android:text="Your Dashboard"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvitemnumbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvuseritems"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:text="You cannot update some data due to various reasons"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tveditnumb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:hint="Phone Number"
+                android:padding="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:inputType="number"
+                    android:padding="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2F9599"
+                android:text="Update"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+include ':bhojmanduwear'
+include ':app'
+rootProject.name = "BhojMandu"
